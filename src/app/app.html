@@ -1,5 +1,5 @@
 
-<h2>Two Way Binding</h2>
+<!-- <h2>Two Way Binding</h2> -->
 <!-- <p>With Signal</p>
 <h1>{{name()}}</h1>
 <input type="text" [value]="name()" (input)="name.set($event.target.value)">
@@ -9,7 +9,7 @@
  <input type="text" value="age" [(ngModel)]="age">
 <input type="text" (ngModelChange)="age=$event" [ngModel]="age"> -->
 
-<h1>Object</h1>
+<!-- <h1>Object</h1>
 <h3>{{userData().name}}</h3>
 <input type="text" [value]="userData().name" (input)="updateUserData('name',$event.target.value)">
 <hr>
@@ -17,4 +17,29 @@
 <input type="text" [value]="userData().age" (input)="updateUserData('age',$event.target.value)">
 <hr>
 <h3>{{userData().email}}</h3>
-<input type="text" [value]="userData().email" (input)="updateUserData('email',$event.target.value)">
+<input type="text" [value]="userData().email" (input)="updateUserData('email',$event.target.value)"> -->
+
+<!-- <h1> Getter and Setter Property </h1>
+<h2>{{uName}}</h2>
+<input type="text" [(ngModel)]="uName">
+<hr>
+<h2>Getter and Stter for Object</h2>
+<h2>{{userCollege}}</h2>
+<input type="text" [(ngModel)]="userCollege">
+<hr>
+<h2>{{userEmail}}</h2>
+<input type="text" [(ngModel)]="userEmail"> -->
+
+<!-- <h2>Directive In Angular</h2>
+<h4 *ngIf="isLogin()">Welcome Yogyata</h4>
+
+<div>
+  <ul *ngFor="let user of users()">
+    <li>
+      {{user}}
+    </li>
+
+  </ul>
+</div>
+
+<p [ngStyle]="{color:pColor}">Hello Kanha jiiii</p>  -->
