@@ -2,10 +2,11 @@ import { CommonModule } from '@angular/common';
 import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
+import { Footer } from './footer.ts/footer';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,FormsModule,CommonModule],
+  imports: [RouterOutlet,FormsModule,CommonModule,Footer],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
