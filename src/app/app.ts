@@ -1,12 +1,24 @@
 import { Component, signal } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet,FormsModule],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('angular-21-tut');
+ 
+  // name =signal('Yogyata');
+  // age="12";
+  userData=signal({
+    name:"Yogyata Chaubey",
+    age:25,
+    email:"yogyata25@test.com"
+  })
+
+  updateUserData(key:string,val:string){
+this.userData.update((item)=>({...item,[key]:val}))
+  }
 }
