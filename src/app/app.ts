@@ -13,7 +13,8 @@ export class App {
   // name =signal('Yogyata');
   // age="12";
   userData=signal({
-    name:"Rimmi Chaubey",
+    //name:"Rimmi Chaubey",
+    name:"helloooo",
     age:25,
     email:"yogyata25@test.com"
   })
